@@ -1,0 +1,216 @@
+.search-bar{
+    display:block;
+    flex: 1;
+    height: 36px;
+    margin-left: 76px;
+    border-color: #c6c6c6;
+    border-radius: 20px 0px 0px 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    padding-left: 16px;
+    z-index: 1;
+    outline:none;
+    box-shadow: inset 1px 2px 5px rgba(0, 0,0,0.05);
+    width: 0;
+
+}
+
+.search-bar::placeholder{
+    font-family: roboto,noto,sans-serif;
+    font-size: 16px;
+    color: #494949;
+}
+.header{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #dedede;
+    background-color: #ffffff;
+    z-index: 100;
+
+}
+
+
+.left-section{
+    width: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu-button{
+    display: flex;
+    height: 38px;
+    width: 38px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.hamburger-menu-button:hover{
+    background-color: #eeeeee;
+}
+
+.hamburger-menu{
+    height: 24px;
+}
+
+.youtube-logo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    max-width: 726px;
+    align-items: center;
+}
+
+.search{
+    height: 24px;
+}
+
+.search-button{
+    height: 40px;
+    display: flex;
+    margin-right: 10px;
+    width: 64px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color:#c6c6c6;
+    margin-left:-1px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+}
+
+.search-button:hover{
+    background-color: #eeeeee;
+}
+
+.upload-button .tooltip,.youtube-apps-button .tooltip,.notifications-button .tooltip,.voice-search-icon-button .tooltip,.search-button .tooltip{
+    position: absolute;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -35px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: none;
+}
+
+.upload-button:hover .tooltip,.youtube-apps-button:hover .tooltip,.notifications-button:hover .tooltip,.voice-search-icon-button:hover .tooltip,.search-button:hover .tooltip{
+    opacity:0.95;
+}
+
+
+.voice-search-icon{
+    height: 24px;
+}
+
+.voice-search-icon-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    background-color: #ffffff;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.voice-search-icon-button:hover{
+    background-color: #eeeeee;
+}
+
+
+.right-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.upload,.youtube-apps,.notifications{
+    height:24px;
+}
+
+.my-channel{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.my-channel-button{
+    margin-left: 18px;
+    padding-top:4px;
+    cursor: pointer;
+}
+
+.upload-button,.youtube-apps-button,.notifications-button{
+    height:38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 19px;
+    cursor: pointer;
+}
+.upload-button{
+    margin-left: 3px;
+}
+.youtube-apps-button{
+    margin-left:12px;
+}
+.upload-button:hover{ 
+    background-color: #eeeeee;
+}
+.youtube-apps-button:hover{ 
+    background-color: #eeeeee;
+}
+.notifications-button{
+    margin-left:12px;
+    position: relative;
+}
+
+.notifications-button:hover{
+    background-color: #eeeeee;
+    
+}
+.notifications-count{
+    position: absolute;
+    font-family: roboto,arial;
+    font-size: 10px;
+    font-weight: 500;
+    top: 4px;
+    right: 1px;
+    padding: 4.5px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border:2px solid white;
+    background-color: #cc0000;
+    color: #ffffff;
+}

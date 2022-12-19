@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="todo-button" onclick="done()">To Do</button>
+    <div id="counter">0</div>
+    <button onclick="counterUp()">up</button>
+    <button onclick="counterDown()">down</button>
+    <br>
+    <input type="text" id="todo-title">
+    <button onclick="displayTitle()">Display Title</button>
+    <br>
+    <script>
+        document.title="ayush's todo list";
+
+        function done() {
+            let button=document.getElementById('todo-button');
+            button.innerText='done'
+            
+        };
+
+        function toUpper(strarr){
+            let result=[];
+
+            strarr.forEach(function (str) {
+                result.push(str.toUpperCase());
+            });
+            console.log(result);
+        }
+
+        toUpper(['mango','apple']);
+
+        function arrayDouble(stringArr) {
+            let result=[];
+
+            stringArr.forEach(function(str){
+                result.push(str);
+                result.push(str);
+            });
+            console.log(result);
+
+        }
+
+        arrayDouble(['god','demon'])
+
+        function arraySum(numarr) {
+            let total=0;
+            numarr.forEach(function(num){
+                total=total+num;
+            });
+            console.log(total);
+        }
+
+        arraySum([2,5,8,3,5.5,-4]);
+
+        let count=0;
+        function counterUp(){
+            count=count+1;
+
+            let div=document.getElementById('counter');
+            div.innerText=count
+        }
+        
+        function counterDown(){
+            count=count-1;
+
+            let div=document.getElementById('counter');
+            div.innerText=count
+        }
+
+        function displayTitle(){
+            let textbox=document.getElementById('todo-title');
+            let title=textbox.value;
+
+            let div =document.createElement('div');
+            div.innerText=title;
+            document.body.appendChild(div);
+        }
+
+    </script>
+</body>
+</html>

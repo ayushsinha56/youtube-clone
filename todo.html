@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.js">
+    <title>Document</title>
+</head>
+<body>
+    <input id="date-picker" type="date">
+    <input id="todo-title" type="text">
+    <button onclick="addTodo()">add item</button>
+
+    <div id="todo-list"></div>
+    <script>  
+        const todos = [{
+            title: 'Get groceries',
+            dueData: '2021-10-04'
+        },{
+            title: 'Wash car',
+            dueData: '2021-02-03'
+        },{
+            title: 'Make dinner',
+            dueData: '1945-05-06'
+        }];
+
+        render();
+
+        function addTodo() {
+            const textbox = document.getElementById('todo-title');
+            const title = textbox.value;
+
+            const dataPicker=document.getElementById();
+            const dueData=dataPicker.value;
+            todos.push({
+                title: title,
+                dueData: dueData
+            });
+
+            render();
+        };
+
+        function render(){
+            // reset our list
+            document.getElementById('todo-list').innerHTML='';
+
+            todos.forEach(function (todo) {
+            const element = document.createElement('div');
+            element.innerText = todo.title + ' ' + todo.dueData;
+            const todoList=document.getElementById('todo-list');
+            todoList.appendChild(element);
+        });
+        }
+    </script>
+</body>
+</html>

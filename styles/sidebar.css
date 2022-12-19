@@ -1,0 +1,76 @@
+.sidebar{
+    position:fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    background-color: rgb(255, 255, 255);
+    width: 230px;
+    padding-left: 12px;
+    
+    z-index: 200;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 12px;
+    
+}
+
+@media (max-width:400px) {
+    .sidebar{
+        visibility: hidden;
+    }
+}
+
+@media (min-width:401px) and (max-width: 750px){
+    .sidebar{
+        visibility: hidden;
+    }    
+    
+}
+
+
+
+
+.sidebar-link{
+    height: 40px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    cursor: pointer;
+    flex-direction: row;
+    
+    line-height: 2.5;
+    color: #212529;
+    border-radius: 10px;
+}
+
+.sidebar-link:hover{
+    background-color: #eeeeee;
+    
+}
+
+.sidebar-link:active{
+    background-color: #d6d6d6;
+    font-weight: bold;
+}
+
+.home,.explore,.subscriptions,.originals,.youtube-music,.library{
+    height: 24px;
+}
+
+.sidebar-text{
+    margin-left: 24px;
+    font-family: roboto,arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+
+.sidebar-gap{
+    border-top: 1px solid #0000001a ;
+    margin-top: 12px;
+    padding-top: 12px;
+    width: 210px;
+}

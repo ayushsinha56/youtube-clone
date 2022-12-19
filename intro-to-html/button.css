@@ -1,0 +1,107 @@
+button{
+    vertical-align: top;
+}
+
+
+.subscribe-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(202, 0, 0);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+}
+
+.subscribe-button:hover{
+    opacity: 0.8;
+
+}
+
+.subscribe-button:active{
+    opacity: 0.6;
+}
+
+
+.join-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(41, 64, 255);
+    border-radius: 2px;
+    color: rgb(41, 64, 255);
+    padding: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s,color 0.15s;
+}
+
+.join-button:hover{
+    background-color:rgb(41, 64, 255) ;
+    color: white;
+}
+
+.join-button:active{
+    opacity: 0.7;
+}
+
+.tweet-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(2, 158, 255);
+    border:none;
+    font-weight: bold;
+    border-radius: 18px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.15s, opacity 0.15s;
+    margin-right: 8px;
+    
+}
+.tweet-button:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tweet-button:active{
+    box-shadow:none;
+    opacity: 0.8;
+}
+
+.save-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-width:1px;
+    border-style: solid;
+    border-color: rgb(0, 77, 184);
+    font-weight: bold;
+    border-radius: 19px;
+    color: rgb(0, 77, 184);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s, border-width 0.15s, opacity 0.15s;
+}
+
+.save-button:hover{
+    border-width: 1.8px;
+    background-color: rgb(194, 219, 255);
+    
+}
+
+.save-button:active{
+    opacity: 0.8;
+}
